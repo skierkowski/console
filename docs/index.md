@@ -18,12 +18,13 @@ Serverless Framework.
 
 **Upgrade or Install Serverless Framework**
 
-```
+```text
 npm install -g serverless
 ```
 
 Configure an existing project with Serevrless by adding `--console` 
 flag the serverless command. 
+
 
 ```text
 serverless --console
