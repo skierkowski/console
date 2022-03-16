@@ -5,7 +5,7 @@ description: A guide to using Serverless Console UI
 menuOrder: 1
 -->
 
-## Getting Started
+## Overview
 Serverless Console provides an easy to use User Interface for 
 monitoring your Serverless architectures. We automatically
 recongize patterns by observing [Traces](traces.md) sent by our
@@ -13,48 +13,25 @@ recongize patterns by observing [Traces](traces.md) sent by our
 
 
 To start using the Console to monitor your apps, you'll need to
-signup, and create your own organization. To do this please ensure
-you have the latest version of [Serverless Framework](https://github.com/serverless/serverless) 
-installed (v3.7.5+ required).
-
-```text
-npm -g install serverless
+signup, and create your own organization. 
 ```
 
-## Creating an Organization 
+## Creating a user and Organization 
 If you're new to Serveless, you'll need to sign up and create an 
-Orginization (Org) to start using Serverless Console. An Prganization 
-is treated as a tenant across Serverless products and data is not able to
-be shared across Organization. It also will appear in your
-URL. 
+Orginization (Org) on [Serverless Dashboard](https://app.serverless.com) 
+to start using Serverless Console. An Organization is treated as a 
+tenant across Serverless products and data is not able to be shared 
+across Organization. 
 
-To start the onboarding process run the following command from a new 
-workspace.
 
-```text
-serverless --console
+
+```text	
+serverless \
+  --org=<your-org-name> \
+  --name=console-http-api \
+  --template=aws-node-express-api \
+  --console
 ```
-
-This will begin an interactive onboarding experience, which creates
-your first Serverless Framwork project.
-
-```text
-Creating a new serverless project
-
-? What do you want to make? (Use arrow keys)
-❯ AWS - Node.js - Starter
-  AWS - Node.js - HTTP API
-  AWS - Node.js - Scheduled Task
-  AWS - Node.js - SQS Worker
-  AWS - Node.js - Express API
-  AWS - Node.js - Express API with DynamoDB
-  Other
-```
-
-Choose one of the examples and follow the prompts to create
-your user and organization. We recommend using an org name your 
-team will recognize and is easy to type.
-
 
 **Setup a local AWS Access Key**
 If you have not used framework to deploy to you'll
@@ -89,7 +66,7 @@ serverless deploy
 ## Adding More Team Members
 
 Console currently supports the following basic roles which 
-are shared across your org.
+are shared across your org. 
 
 * **Owner** - Owner of the account. Can add other admins and 
 contributors. Only one owner per account can be present.
@@ -99,4 +76,4 @@ all of console.
 can not add other users.
 
 *Note: adding users requires a valid Enterprise subscription
-or a Free Trial.*
+or a Free Trial. Please contact sales@serverless.com for details.*
