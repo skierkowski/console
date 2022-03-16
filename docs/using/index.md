@@ -14,7 +14,7 @@ recongize patterns by observing [Traces](traces.md) sent by our
 
 To start using the Console to monitor your apps, you'll need to
 signup, and create your own organization. 
-```
+
 
 ## Creating a user and Organization 
 If you're new to Serveless, you'll need to sign up and create an 
